@@ -3,159 +3,214 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph EWONDJO | Ingénieur Logiciel & Architecte IA</title>
+    <title>Joseph EWONDJO | Ingénieur Logiciel & Content Strategist</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
-        .hero-gradient { background: radial-gradient(circle at top right, #1e293b 0%, #0f172a 100%); }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+        .glass { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); }
+        .hero-dark { background: radial-gradient(circle at center, #1e293b 0%, #020617 100%); }
+        .card-neo { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .card-neo:hover { transform: translateY(-12px); box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.2); }
+        .text-gradient { background: linear-gradient(to right, #3b82f6, #2dd4bf); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans">
 
     <nav class="glass sticky top-0 z-50 py-4 px-6 md:px-12 flex justify-between items-center border-b border-slate-200">
-        <span class="font-black text-2xl tracking-tighter text-blue-600">JE<span class="text-slate-800">.CORE</span></span>
-        <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest">
-            <a href="#projets" class="hover:text-blue-600 transition">Projets</a>
+        <span class="font-black text-2xl tracking-tighter"><span class="text-blue-600">JE</span>.DEV</span>
+        <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-slate-600">
+            <a href="#projets" class="hover:text-blue-600 transition">Réalisations</a>
             <a href="#expertise" class="hover:text-blue-600 transition">Expertise</a>
-            <a href="#vision" class="hover:text-blue-600 transition">Vision</a>
-            <a href="mailto:ewondjojoseph@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Hire Me</a>
+            <a href="#leadership" class="hover:text-blue-600 transition">Leadership</a>
+            <a href="mailto:ewondjojoseph@gmail.com" class="bg-blue-600 text-white px-6 py-2.5 rounded-full hover:bg-blue-700 shadow-lg shadow-blue-200 transition">Contact</a>
         </div>
     </nav>
 
-    <header class="hero-gradient text-white py-24 md:py-32 px-6 text-center relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-            <svg viewBox="0 0 100 100" class="w-full h-full"><path d="M0 0 L100 100 M0 100 L100 0" stroke="white" stroke-width="0.1"/></svg>
-        </div>
+    <header class="hero-dark text-white py-28 px-6 text-center relative overflow-hidden">
         <div class="relative z-10">
-            <span class="bg-blue-500/20 text-blue-400 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest border border-blue-500/30">Disponible pour consultance</span>
-            <h1 class="text-5xl md:text-7xl font-black mt-6 tracking-tight">Joseph Wilfried <span class="text-blue-500">EWONDJO</span></h1>
-            <p class="mt-6 text-xl md:text-2xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed">
-                Architecte de solutions numériques spécialisé en <strong>Génie Logiciel & IA Décisionnelle</strong>. 
-                Expert en transformation digitale à Yaoundé.
+            <div class="inline-block bg-blue-500/10 border border-blue-500/20 px-4 py-1.5 rounded-full text-blue-400 text-xs font-bold uppercase mb-6">
+                Master 2 SIGL | Expert Full-Stack
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight leading-tight">Joseph Wilfried <br><span class="text-gradient">EWONDJO</span></h1>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-slate-400 font-light leading-relaxed mb-10">
+                Architecte de solutions à fort impact social. Je fusionne le <strong>Génie Logiciel</strong>, l'<strong>IA Décisionnelle</strong> et la <strong>Création de Contenu</strong> pour bâtir l'avenir numérique.
             </p>
-            <div class="mt-10 flex flex-wrap justify-center gap-4">
-                <a href="#projets" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-bold transition flex items-center gap-2">
-                    <i class="fas fa-rocket"></i> Voir mes travaux
-                </a>
-                <a href="https://www.linkedin.com/in/joseph-ewondjo/" target="_blank" class="bg-white/10 hover:bg-white/20 border border-white/20 px-8 py-4 rounded-xl font-bold transition backdrop-blur-sm">
-                    Mon LinkedIn
-                </a>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#projets" class="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105">Explorer mes projets</a>
+                <a href="https://www.linkedin.com/in/joseph-ewondjo/" target="_blank" class="bg-white/5 hover:bg-white/10 border border-white/20 px-8 py-4 rounded-xl font-bold transition backdrop-blur-md">LinkedIn Profile</a>
             </div>
         </div>
     </header>
 
-    <section id="expertise" class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm card-hover">
-                <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
-                    <i class="fas fa-layer-group"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3 text-slate-800">Architecture & Back-end</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">Conception de systèmes robustes sous <strong>Django, Java & PHP</strong>. Maîtrise des microservices et de la gestion de données critiques (Redis, RabbitMQ).</p>
+    <section class="max-w-6xl mx-auto -mt-12 relative z-20 px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white p-6 rounded-2xl shadow-xl text-center border border-slate-100">
+                <p class="text-3xl font-black text-blue-600">7+</p>
+                <p class="text-xs uppercase font-bold text-slate-400 mt-1">Langages Maîtrisés</p>
             </div>
-            <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm card-hover">
-                <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
-                    <i class="fas fa-brain"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3 text-slate-800">IA & Aide à la décision</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">Expertise académique (Master 2) en <strong>Algorithmes Génétiques et méthode AHP</strong> pour l'optimisation de processus complexes.</p>
+            <div class="bg-white p-6 rounded-2xl shadow-xl text-center border border-slate-100">
+                <p class="text-3xl font-black text-red-600">1.8k+</p>
+                <p class="text-xs uppercase font-bold text-slate-400 mt-1">Abonnés YouTube</p>
             </div>
-            <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm card-hover">
-                <div class="w-14 h-14 bg-purple-100 text-purple-600 rounded-2xl flex items-center justify-center text-2xl mb-6">
-                    <i class="fas fa-mobile-alt"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3 text-slate-800">Expérience Mobile</h3>
-                <p class="text-slate-600 text-sm leading-relaxed">Développement cross-platform haute performance avec <strong>Flutter & Angular</strong>, axé sur l'UX et la fluidité des interfaces.</p>
+            <div class="bg-white p-6 rounded-2xl shadow-xl text-center border border-slate-100">
+                <p class="text-3xl font-black text-emerald-600">M2</p>
+                <p class="text-xs uppercase font-bold text-slate-400 mt-1">Expertise SIGL</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-xl text-center border border-slate-100">
+                <p class="text-3xl font-black text-purple-600">140k+</p>
+                <p class="text-xs uppercase font-bold text-slate-400 mt-1">Vues Cumulées</p>
             </div>
         </div>
     </section>
 
-    <section id="projets" class="py-20 bg-slate-900 text-white px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                <div>
-                    <h2 class="text-4xl font-black mb-4">Projets Phares</h2>
-                    <p class="text-slate-400 max-w-xl text-lg font-light">Des solutions réelles pour des problèmes réels, de la Fintech à l'IoT industriel.</p>
-                </div>
-                <span class="text-blue-500 font-mono tracking-tighter hidden md:block">04 / PROJETS RÉCENTS</span>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="group relative bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 hover:border-blue-500/50 transition">
-                    <div class="h-64 bg-gradient-to-br from-blue-900 to-slate-800 p-12 flex items-center justify-center">
-                        <i class="fas fa-wallet text-7xl text-blue-500 group-hover:scale-110 transition duration-500"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold">JEW-Pay</h3>
-                            <span class="bg-blue-600 text-[10px] px-2 py-1 rounded-md uppercase font-black">Fintech</span>
-                        </div>
-                        <p class="text-slate-400 text-sm mb-6">Écosystème de paiement mobile et gestion de factures. Architecture microservices sécurisée avec intégration API CamPay.</p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-mono text-blue-400 border border-blue-400/30 px-2 py-1 rounded">Python</span>
-                            <span class="text-xs font-mono text-blue-400 border border-blue-400/30 px-2 py-1 rounded">Redis</span>
-                            <span class="text-xs font-mono text-blue-400 border border-blue-400/30 px-2 py-1 rounded">Flutter</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="group relative bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 hover:border-emerald-500/50 transition">
-                    <div class="h-64 bg-gradient-to-br from-emerald-900 to-slate-800 p-12 flex items-center justify-center">
-                        <i class="fas fa-satellite-dish text-7xl text-emerald-500 group-hover:scale-110 transition duration-500"></i>
-                    </div>
-                    <div class="p-8">
-                        <div class="flex justify-between items-start mb-4">
-                            <h3 class="text-2xl font-bold">Projet LAURA</h3>
-                            <span class="bg-emerald-600 text-[10px] px-2 py-1 rounded-md uppercase font-black">IoT / Safety</span>
-                        </div>
-                        <p class="text-slate-400 text-sm mb-6">Dispositif de sécurité pour enfants utilisant <strong>LoRaWAN</strong> et <strong>Edge AI</strong> pour une localisation précise sans dépendance aux réseaux GSM classiques.</p>
-                        <div class="flex gap-2">
-                            <span class="text-xs font-mono text-emerald-400 border border-emerald-400/30 px-2 py-1 rounded">C++</span>
-                            <span class="text-xs font-mono text-emerald-400 border border-emerald-400/30 px-2 py-1 rounded">LoRa</span>
-                            <span class="text-xs font-mono text-emerald-400 border border-emerald-400/30 px-2 py-1 rounded">EdgeAI</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="vision" class="py-20 px-6 max-w-7xl mx-auto text-center">
-        <h2 class="text-3xl font-black mb-12">Au-delà de la technique</h2>
-        <div class="bg-white rounded-[3rem] p-8 md:p-16 border border-slate-200 shadow-2xl flex flex-col md:flex-row items-center gap-12">
-            <div class="flex-1 text-left">
-                <h3 class="text-3xl font-bold text-slate-800 mb-6 italic">Engineering of Attention</h3>
-                <p class="text-slate-600 text-lg leading-relaxed mb-8">
-                    En tant que créateur de contenu (+1.8k abonnés), je combine <strong>pédagogie et ingénierie</strong>. Je ne construis pas seulement des applications ; je crée des expériences qui captent l'attention et génèrent de l'engagement.
+    <section id="expertise" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-16 items-center">
+            <div class="flex-1">
+                <h2 class="text-3xl font-black mb-6 border-l-8 border-blue-600 pl-6 uppercase">Expertise Multidimensionnelle</h2>
+                <p class="text-slate-600 leading-relaxed mb-6">
+                    Mon parcours en Master 2 en Systèmes d'Information m'a permis de développer une polyvalence technique rare. Je ne me contente pas de coder, je conçois des systèmes robustes basés sur la <strong>Modélisation UML/Merise</strong> et les <strong>Design Patterns</strong>.
                 </p>
-                <div class="flex gap-8">
-                    <div><span class="block text-3xl font-black text-blue-600">140k+</span><span class="text-xs text-slate-400 uppercase tracking-widest">Vues cumulées</span></div>
-                    <div><span class="block text-3xl font-black text-blue-600">2027</span><span class="text-xs text-slate-400 uppercase tracking-widest">Objectif Campus DIA</span></div>
+                <div class="grid grid-cols-2 gap-4 text-sm">
+                    <div class="bg-blue-50 p-3 rounded-lg border border-blue-100 font-bold text-blue-700">Architecture API REST</div>
+                    <div class="bg-emerald-50 p-3 rounded-lg border border-emerald-100 font-bold text-emerald-700">IA & Algorithmes</div>
+                    <div class="bg-purple-50 p-3 rounded-lg border border-purple-100 font-bold text-purple-700">Microservices</div>
+                    <div class="bg-orange-50 p-3 rounded-lg border border-orange-100 font-bold text-orange-700">UI/UX Premium</div>
                 </div>
             </div>
-            <div class="flex-1 w-full">
-                <div class="aspect-video rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+            <div class="flex-1 grid grid-cols-3 gap-4">
+                <div class="p-4 bg-white rounded-xl shadow-sm text-center border-b-4 border-blue-500"><i class="fab fa-python text-2xl mb-2"></i><p class="text-[10px] font-bold">Python</p></div>
+                <div class="p-4 bg-white rounded-xl shadow-sm text-center border-b-4 border-orange-500"><i class="fab fa-java text-2xl mb-2"></i><p class="text-[10px] font-bold">Java</p></div>
+                <div class="p-4 bg-white rounded-xl shadow-sm text-center border-b-4 border-blue-400"><i class="fab fa-angular text-2xl mb-2"></i><p class="text-[10px] font-bold">Angular</p></div>
+                <div class="p-4 bg-white rounded-xl shadow-sm text-center border-b-4 border-cyan-400"><i class="fab fa-flutter text-2xl mb-2"></i><p class="text-[10px] font-bold">Flutter</p></div>
+                <div class="p-4 bg-white rounded-xl shadow-sm text-center border-b-4 border-indigo-600"><i class="fab fa-php text-2xl mb-2"></i><p class="text-[10px] font-bold">PHP</p></div>
+                <div class="p-4 bg-white rounded-xl shadow-sm text-center border-b-4 border-slate-800"><i class="fas fa-terminal text-2xl mb-2"></i><p class="text-[10px] font-bold">C / C++</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="py-24 bg-slate-900 text-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-black mb-16 text-center uppercase tracking-widest">Portfolio de Réalisations</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 card-neo">
+                    <div class="h-40 bg-gradient-to-br from-blue-600 to-indigo-800 flex items-center justify-center">
+                        <i class="fas fa-credit-card text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-blue-400">JEW-Pay</h3>
+                        <p class="text-slate-400 text-xs mb-4">Fintech : Paiement mobile & facturation (Microservices, Redis, RabbitMQ).</p>
+                        <div class="flex gap-2"><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">Django</span><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">Flutter</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 card-neo">
+                    <div class="h-40 bg-gradient-to-br from-red-500 to-pink-700 flex items-center justify-center">
+                        <i class="fas fa-hand-holding-heart text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-red-400">Odyssée</h3>
+                        <p class="text-slate-400 text-xs mb-4">Impact Social : Plateforme de signalement VBG sécurisée.</p>
+                        <div class="flex gap-2"><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">Django</span><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">Sécurité</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 card-neo">
+                    <div class="h-40 bg-gradient-to-br from-emerald-500 to-teal-700 flex items-center justify-center">
+                        <i class="fas fa-shield-virus text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-emerald-400">Projet LAURA</h3>
+                        <p class="text-slate-400 text-xs mb-4">IoT : Sécurité enfant via LoRaWAN & Edge AI.</p>
+                        <div class="flex gap-2"><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">IoT</span><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">C++</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 card-neo">
+                    <div class="h-40 bg-gradient-to-br from-amber-500 to-orange-700 flex items-center justify-center">
+                        <i class="fas fa-university text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-amber-400">FLCS Management</h3>
+                        <p class="text-slate-400 text-xs mb-4">Automatisation académique : Gestion centre de langues.</p>
+                        <div class="flex gap-2"><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">Génie Logiciel</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 card-neo">
+                    <div class="h-40 bg-gradient-to-br from-indigo-500 to-blue-700 flex items-center justify-center">
+                        <i class="fas fa-graduation-cap text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-indigo-400">CKEDU</h3>
+                        <p class="text-slate-400 text-xs mb-4">E-learning : Plateforme pédagogique interactive.</p>
+                        <div class="flex gap-2"><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">Angular</span><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">Django</span></div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl overflow-hidden border border-slate-700 card-neo">
+                    <div class="h-40 bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center">
+                        <i class="fas fa-utensils text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2 text-orange-400">GiveEat</h3>
+                        <p class="text-slate-400 text-xs mb-4">Delivery : Application mobile UI/UX fluide.</p>
+                        <div class="flex gap-2"><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">Flutter</span><span class="bg-slate-700 text-[10px] px-2 py-1 rounded">Dart</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="leadership" class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 class="text-3xl font-black mb-12 border-b-4 border-slate-800 inline-block">Postes de Responsabilité</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-3xl border-l-8 border-blue-900 shadow-lg">
+                <span class="text-blue-900 font-black text-sm uppercase">ELECAM</span>
+                <h3 class="text-xl font-bold mt-2">Président de Bureau de Vote</h3>
+                <p class="mt-4 text-slate-600 text-sm leading-relaxed">
+                    Supervision stratégique des opérations de vote. Coordination d'équipes de scrutateurs et garant de l'intégrité absolue des données électorales.
+                </p>
+            </div>
+            
+            <div class="bg-white p-8 rounded-3xl border-l-8 border-red-600 shadow-lg">
+                <span class="text-red-600 font-black text-sm uppercase">Durable Impact Academy</span>
+                <h3 class="text-xl font-bold mt-2">Lead & Fondateur</h3>
+                <p class="mt-4 text-slate-600 text-sm leading-relaxed">
+                    Pilotage d'une plateforme éducative visant à former la prochaine génération de talents tech au Cameroun.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-12 bg-slate-100 rounded-[2.5rem] p-8 md:p-12 flex flex-col lg:flex-row items-center gap-12 border border-slate-200">
+            <div class="flex-1">
+                <h3 class="text-2xl font-black mb-4 flex items-center gap-3 italic text-red-600">
+                    <i class="fab fa-youtube"></i> Engineering of Attention
+                </h3>
+                <p class="text-slate-700 leading-relaxed mb-6">
+                    Plus qu'un développeur, un <strong>Vulgarisateur Tech</strong>. Ma chaîne YouTube est le laboratoire où je simplifie des concepts comme Flutter, React ou Python pour plus de 1 800 passionnés.
+                </p>
+                <a href="https://youtube.com/@prince_47_codelab" target="_blank" class="font-bold text-red-600 hover:underline">Rejoindre la communauté →</a>
+            </div>
+            <div class="flex-1 w-full grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg bg-black border-2 border-white">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/T1xh8O2KmQw" frameborder="0" allowfullscreen></iframe>
                 </div>
+                <div class="aspect-video rounded-2xl overflow-hidden shadow-lg bg-black border-2 border-white">
+                    <iframe class="w-full h-full" src="https://www.youtube.com/embed/diydQkpRvek" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-50 border-t border-slate-200 py-16 px-6">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-center md:text-left">
-                <p class="font-black text-2xl tracking-tighter">Joseph EWONDJO</p>
-                <p class="text-slate-500">Master 2 SIGL - Yaoundé I</p>
-                <p class="text-blue-600 font-medium">Direction : Pr. Abessolo Alo'o Ghislain</p>
-            </div>
-            <div class="flex gap-6 text-2xl text-slate-400">
-                <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-github"></i></a>
-                <a href="#" class="hover:text-blue-600 transition"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:ewondjojoseph@gmail.com" class="hover:text-blue-600 transition"><i class="fas fa-envelope"></i></a>
-            </div>
+    <footer class="py-20 bg-white border-t border-slate-200 text-center">
+        <h2 class="text-2xl font-black tracking-tighter mb-4 uppercase">Joseph Wilfried EWONDJO</h2>
+        <p class="text-slate-500 text-sm mb-8">Biyem-Assi, Yaoundé, Cameroun | Master 2 SIGL</p>
+        <div class="flex justify-center gap-8 text-2xl text-slate-400">
+            <a href="https://www.linkedin.com/in/joseph-ewondjo/" class="hover:text-blue-600 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:ewondjojoseph@gmail.com" class="hover:text-blue-600 transition"><i class="fas fa-envelope"></i></a>
+            <a href="https://youtube.com/@prince_47_codelab" class="hover:text-red-600 transition"><i class="fab fa-youtube"></i></a>
         </div>
     </footer>
 
